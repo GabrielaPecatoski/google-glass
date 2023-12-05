@@ -1,0 +1,85 @@
+<nav id="menu">
+    <h1>Menu Principal</h1>
+    <ul type="disc">
+       <li onmouseover="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/home.png')" onmouseout="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/icone-contato.png')"><a href="file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/index.html">Home</a></li>
+        <li onmouseover="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/especificacoes.png')" onmouseout="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/icone-contato.png')"><a href="file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/fotos.png')" onmouseout="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/icone-contato.png')"><a href="file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/multimidia.png')" onmouseout="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/icone-contato.png')"><a href="file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/icone-contato.png')" onmouseout="mudaFoto('file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/_imagens/icone-contato.png')"><a href="file:///C:/Users/Claudiomar/Desktop/projeto-glass-html5/fale-conosco.html">Fale conosco</a></li>
+    </ul>
+    </nav>
+    </header>
+    
+    Fale Conosco > Contato
+    Formulário de Contato
+    por Gustavo Guanabara
+    Atualizado em 01/Maio/2013
+    
+    <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+    
+      <fieldset id="Usuário"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo"/></p>
+        <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"/></p>
+        <p>E-mail:<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+        <fieldset id="sexo"><legend>Sexo</legend>
+            <input type="radio" name="tSexo" id="cMax"/> <label for="cMax">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+            </fieldset>
+        <p>Data de Nascimento:<input type="date" name="tNasc" id="cNesc"></input></p>
+        </fieldset>
+    
+    <fieldset id="Endereço"><legend>Endereço do Usuário</legend>
+        <p>Logradouro: <input type="text" name="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
+        <p>Número: <input type="number" name="Tnum" id="cNum" min="0" max="999999"/></p>
+        <p><label for="cEst">Estado:
+        <select name="tEst" id="cEst">
+        <optgroup label="Região Sudeste">
+          <option value="RJ">Rio de janeiro</option>
+          <option>São Paulo</option>
+          <option>Minas Gerais</option>
+        </optgroup>
+        
+        <optgroup label="Região Sul">
+          <option value="PR" selected>Paraná</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+        </select> </p>
+        <p><label for="cCid">Cidade:</label>
+        <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades"/></p>
+        <datalist id="cidades">
+          <option value="Rio de Janeiro"></option>
+          <option value="Nova Iguaçu"></option>
+          <option value="Niteroi"></option>
+          <option value="Toledo"></option>
+        </datalist>
+    </fieldset>
+    
+    <fieldset id="Mensagem"><legend>Mensagem do Usuário</legend>
+        <p><label for="cUrg">Grau de Urgência:</label>
+        <input type="range" name="tUrg" id="cUrg" min="0" max="100"</p>
+        <p><label for="cMsg">Mensagem:</label>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="deixe aqui sua mensagem"></textarea></p>
+    </fieldset>
+    
+    <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+        <p><input type="checkbox" name="tPed" id="cPed" checked/>
+        <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+        <p><label for="cCor">Cor:</label>
+        <input type="color" name="tCor" id="cCor" value="#0000FF"/></p>
+        <p><label for="cQtd">Quantidade:</label>
+        <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/></p>
+        <p><label for="tTot" id="cTot" placeholder="total" readonly>Preço Total: R$</label></p>
+    </fieldset>
+    
+    <input type="submit" value="Enviar"/>
+    </form>
+    
+    <footer id="rodape">
+    <p>Copyright &copy; 2023 - by Gabriela F. Pecatoski<br/>
+    <a href='http://facebook.com/cursoemvideo'>Facebook</a> 
+    <a href='http://twitter.com/cursoemvideo'></a></p>
+    </footer>
+    </div>
+    </body>
+    </html>
